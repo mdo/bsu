@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap University</title>
+
+    <!-- Enable proper responsive views and prevent iOS/WinPhone auto scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-compiled/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- We'll be adding all our custom CSS here for each step. -->
+    <style>
+
+      body {
+        padding-bottom: 60px;
+      }
+
+      .btn,
+      .btn:hover,
+      .btn:active {
+        background-color: #a03d3c;
+        border-color: #a03d3c;
+      }
+      .btn {
+        border-color: #a03d3c;
+        background-image: -webkit-linear-gradient(#b94a48, #a03d3c);
+        background-repeat: repeat-x;
+      }
+      .btn:hover {
+        background-position: 0 -15px;
+      }
+
+      .btn-outline,
+      .btn-outline:hover,
+      .btn-outline:active {
+        color: #fff;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid rgba(255,255,255,.4);
+      }
+      .btn-outline:hover {
+        background-color: rgba(255,255,255,.4);
+      }
+
+      .jumbotron {
+        margin-bottom: 0;
+        text-align: center;
+        border-radius: 0;
+        background-color: #000;
+        background-image: url("assets/img/moma-3.jpg");
+        background-position: top center;
+        background-size: cover;
+      }
+      .jumbotron .container {
+        max-width: 800px;
+      }
+      .jumbotron h1,
+      .jumbotron .lead {
+        text-shadow: 0 1px 2px rgba(0,0,0,.5);
+      }
+      .jumbotron h1 {
+        color: #fff;
+      }
+      .jumbotron .lead {
+        color: #fff;
+      }
+      .jumbotron .lead a {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .carousel-inner > .item {
+        height: 600px;
+      }
+      .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        min-height: 600px;
+      }
+      .carousel-caption {
+        max-width: 600px;
+        margin: 0 auto;
+        bottom: 10%;
+      }
+      .carousel-caption a {
+        color: #fff;
+        font-weight: 500;
+      }
+      .carousel-caption .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .navbar {
+        background-color: #fff;
+        background-clip: padding-box;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar.affix {
+        box-shadow: 0 0 10px rgba(0,0,0,.25);
+      }
+
+      .navbar .btn {
+        margin-top: 8px;
+      }
+
+      .navbar-static-top.affix {
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+
+
+      .featurette {
+        padding: 100px 0;
+        text-align: center;
+      }
+      .featurette .container {
+        max-width: 800px;
+      }
+      .featurette:nth-child(even) {
+        background-color: #e8eaec;
+      }
+      .featurette .step-num {
+        width: 98px;
+        height: 98px;
+        margin: 0 auto;
+        line-height: 95px;
+        text-align: center;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 50px;
+      }
+
+      .footer {
+        padding: 60px 0;
+      }
+
+      /* For larger screens, we scale up the jumbotron */
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top:    250px;
+          padding-bottom: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Page content -->
+
+    <div id="carousel-example" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example" data-slide-to="1"></li>
+        <li data-target="#carousel-example" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../assets/img/moma-1.jpg" alt="">
+          <div class="carousel-caption">
+            <h1>Bootstrap University</h1>
+            <p class="lead">Bootstrap University is a hands-on code lab specially designed to familiarize you with building on th Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
+            <a href="#" class="btn btn-large">Sign up today</a>
+            <a href="#" class="btn btn-large btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/img/moma-2.jpg" alt="">
+          <div class="carousel-caption">
+            <h1>Bootstrap University</h1>
+            <p class="lead">Bootstrap University is a hands-on code lab specially designed to familiarize you with building on th Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
+            <a href="#" class="btn btn-large">Sign up today</a>
+            <a href="#" class="btn btn-large btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/img/moma-3.jpg" alt="">
+          <div class="carousel-caption">
+            <h1>Bootstrap University</h1>
+            <p class="lead">Bootstrap University is a hands-on code lab specially designed to familiarize you with building on th Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
+            <a href="#" class="btn btn-large">Sign up today</a>
+            <a href="#" class="btn btn-large btn-outline">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <div class="navbar navbar-static-top" data-spy="affix" data-offset-top="600">
+      <div class="container">
+        <a href="#" class="navbar-brand">BSU</a>
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../step-1/index.html">Step 1</a></li>
+          <li><a href="../step-2/index.html">Step 2</a></li>
+          <li class="active"><a href="../step-3/index.html">Step 3</a></li>
+          <li><a href="../step-4/index.html">Step 4</a></li>
+          <li><a href="../step-5/index.html">Step 5</a></li>
+        </ul>
+        <a href="#" class="btn pull-right">Sign up</a>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">1</h1>
+        <h2>Brief tour of Bootstrap 3</h2>
+        <p class="lead">Explore the features Bootstrap 3 has to offer, including a brief overview of the updated grid system and new components.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">2</h1>
+        <h2>Extending classes</h2>
+        <p class="lead">Building on top of Bootstrap is easy when you extend its powerful built-in classes to create your very own components.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">3</h1>
+        <h2>Customizing components</h2>
+        <p class="lead">Bootstrap 3 features new lightweight styles that are easy to override and build upon for just about every component.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">4</h1>
+        <h2>Using JavaScript plugins</h2>
+        <p class="lead">Add interactive components like tooltips, modals, and more to any page with a dozen JavaScript plugins built on jQuery.</p>
+      </div>
+    </div>
+
+    <div class="footer text-center text-muted">
+      <p>Made with love by <a href="http://markdotto.com" title="Visit @mdo's site">@mdo</a>.</p>
+      <p>&lt;3</p>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <!-- Placed at the end of the document so page content loads first. -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../bootstrap-compiled/bootstrap.js"></script>
+
+    <!-- Custom JavaScript -->
+    <!-- We'll be adding all our custom JS here for each demo. -->
+    <script>
+      $(function() {
+        $('.footer a').tooltip()
+      });
+    </script>
+
+  </body>
+</html>
