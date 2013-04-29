@@ -21,14 +21,7 @@
 
     <!-- Custom CSS -->
     <!-- We'll be adding all our custom CSS here for each step. -->
-    <style>
-      .navbar {
-        margin: 20px 0;
-      }
-      .navbar .btn {
-        margin-top: 8px;
-      }
-    </style>
+    <link href="./step-1.css" rel="stylesheet">
   </head>
   <body>
 
@@ -38,22 +31,28 @@
 
       <div class="navbar">
         <a href="#" class="navbar-brand">BSU</a>
-        <ul class="nav navbar-nav">
-          <li><a href="../index.html">Home</a></li>
-          <li class="active"><a href="../step-1/index.html">Step 1</a></li>
-          <li><a href="../step-2/index.html">Step 2</a></li>
-          <li><a href="../step-3/index.html">Step 3</a></li>
-          <li><a href="../step-4/index.html">Step 4</a></li>
-          <li><a href="../step-5/index.html">Step 5</a></li>
-        </ul>
-        <a href="#" class="btn btn-outline pull-right">Sign up</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../step-1/index.html">1. Overview</a></li>
+            <li><a href="../step-2/index.html">2. Customize</a></li>
+            <li><a href="../step-3/index.html">3. JavaScript</a></li>
+            <li><a href="../step-4/index.html">4. Using LESS</a></li>
+            <li><a href="../step-5/index.html">5. Productionize</a></li>
+          </ul>
+          <a href="#" class="btn">Sign up</a>
+        </div>
       </div>
 
       <div class="jumbotron">
         <h1 class="page-heading">Bootstrap University</h1>
-        <p class="lead">Bootstrap University is a hands-on code lab specially designed to familiarize you with building on th Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
+        <p>Bootstrap University is a hands-on code lab specially designed to familiarize you with building on the Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
         <a href="#" class="btn btn-large">Sign up today</a>
-        <a href="#" class="btn btn-large btn-outline">Learn more</a>
+        <a href="#" class="btn btn-large">Learn more</a>
       </div>
 
       <h3>Brief tour of Bootstrap 3</h3>
@@ -67,6 +66,9 @@
 
       <h3>Using JavaScript plugins</h3>
       <p class="lead">Add interactive components like tooltips, modals, and more to any page with a dozen JavaScript plugins built on jQuery.</p>
+
+      <h3>Heading to production</h3>
+      <p>Generate your own build of Bootstrap and button things up before heading into a production environment.</p>
 
       <div class="footer">
         <p>Made with love by <a href="http://markdotto.com">@mdo</a>.</p>

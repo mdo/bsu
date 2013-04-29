@@ -1,0 +1,271 @@
+/*
+ * STEP 4: BUILDING WITH LESS FILES
+ *
+ * Instead of using the compiled Bootstrap CSS, here we make
+ * use of the power of LESS.
+ *
+ * Here's what we'll cover here:
+ *
+ *   1. Using bootstrap.less, or rolling own master file
+ *   2. Extend a class via LESS
+ *   3. Using mixins from Bootstrap
+ *   4.
+ *   5.
+ */
+
+
+//
+// Import all of Bootstrap
+//
+
+// @import "bootstrap-less/bootstrap.less";
+
+
+//
+// Or, import what we need from Bootstrap
+//
+// This is a custom version of the bootstrap.less file,
+// created so we can select only what we need and then
+// compile a custom version of Bootstrap's CSS.
+//
+// It also gives us the option to use Bootstrap's variables
+// and mixins LESS.
+//
+// Anything we don't need, we comment out.
+
+// Core variables and mixins
+@import "bootstrap-less/variables.less";
+@import "bootstrap-less/mixins.less";
+
+// Reset
+@import "bootstrap-less/normalize.less";
+@import "bootstrap-less/print.less";
+
+// Core CSS
+@import "bootstrap-less/scaffolding.less";
+@import "bootstrap-less/type.less";
+@import "bootstrap-less/code.less";
+@import "bootstrap-less/grid.less";
+
+@import "bootstrap-less/tables.less";
+@import "bootstrap-less/forms.less";
+@import "bootstrap-less/buttons.less";
+
+// Components: common
+@import "bootstrap-less/component-animations.less";
+@import "bootstrap-less/glyphicons.less";
+// @import "bootstrap-less/dropdowns.less";
+// @import "bootstrap-less/list-group.less";
+// @import "bootstrap-less/panels.less";
+// @import "bootstrap-less/wells.less";
+// @import "bootstrap-less/close.less";
+
+// Components: Nav
+@import "bootstrap-less/navs.less";
+@import "bootstrap-less/navbar.less";
+// @import "bootstrap-less/button-groups.less";
+// @import "bootstrap-less/breadcrumbs.less";
+// @import "bootstrap-less/pagination.less";
+// @import "bootstrap-less/pager.less";
+
+// Components: Popovers
+// @import "bootstrap-less/modals.less";
+@import "bootstrap-less/tooltip.less";
+// @import "bootstrap-less/popovers.less";
+
+// Components: Misc
+// @import "bootstrap-less/alerts.less";
+// @import "bootstrap-less/thumbnails.less";
+// @import "bootstrap-less/media.less";
+// @import "bootstrap-less/labels.less";
+// @import "bootstrap-less/badges.less";
+// @import "bootstrap-less/progress-bars.less";
+// @import "bootstrap-less/accordion.less";
+@import "bootstrap-less/carousel.less";
+@import "bootstrap-less/jumbotron.less";
+
+// Utility classes
+@import "bootstrap-less/utilities.less"; // Has to be last to override when necessary
+// @import "bootstrap-less/responsive-utilities.less";
+
+
+/*
+ * Build the basics of the document to get us going.
+ */
+
+body {
+  padding-top: 50px;
+  font-family: Ubuntu;
+}
+.footer {
+  padding: 60px 0;
+}
+
+
+/*
+ * Customize the default button styles
+ */
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn,
+.btn:hover,
+.btn:active {
+  background-color: #a03d3c;
+  border-color: #a03d3c;
+}
+.btn {
+  background-image: -webkit-linear-gradient(#b94a48, #a03d3c);
+  background-repeat: repeat-x;
+}
+.btn:hover {
+  background-position: 0 -15px;
+}
+
+
+/*
+ * Then generate our own button class, .btn-bsu
+ */
+
+.btn-bsu {
+  #gradient > .vertical(#b94a48, #a03d3c);
+  .btn-pseudo-states(#b94a48, #a03d3c);
+}
+
+
+/*
+ * We can't use the same mixins here though do to limitations of color
+ * functions on transparent colors.
+ */
+
+.btn-outline,
+.btn-outline:hover,
+.btn-outline:active {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(255,255,255,.4);
+}
+.btn-outline:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+
+/*
+ * Customize the navbar even more by affixing it
+ */
+
+.navbar {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.navbar.affix {
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+.navbar .btn {
+  float: right;
+  margin-top: 8px;
+}
+
+.navbar-brand {
+  color: #b94a48;
+}
+.navbar-brand:hover {
+  color: #a03d3c;
+}
+
+
+/*
+ * Create our own jumbotron, but don't use those classes directly
+ */
+
+.bsu-masthead {
+  .jumbotron();
+
+  margin-bottom: 0;
+  text-align: center;
+  border-radius: 0;
+  background-image: url("../assets/img/moma-3.jpg");
+  background-position: top center;
+  background-size: cover;
+
+  .container {
+    max-width: 800px;
+  }
+  h1,
+  .lead {
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  }
+  h1 {
+    line-height: 1;
+    color: #fff;
+  }
+  .lead {
+    color: #fff;
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .btn {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}
+
+
+/*
+ * Create a brand new component
+ */
+
+.featurette {
+  padding: 40px 20px;
+  text-align: center;
+  .container {
+    max-width: 800px;
+  }
+  &:nth-child(even) {
+    background-color: #e8eaec;
+  }
+  .step-num {
+    width: 98px;
+    height: 98px;
+    margin: 0 auto;
+    line-height: 95px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 50px;
+  }
+}
+
+
+/*
+ * Responsively scale things up
+ */
+
+@media (min-width: 768px) {
+
+  /* Scale padding and font-sizes */
+  .bsu-masthead {
+    padding-top:    250px;
+    padding-bottom: 250px;
+    font-size: 21px;
+    h1 {
+      font-size: 80px;
+    }
+  }
+
+  /* Increase whitespace around featurette for impact */
+  .featurette {
+    padding-top:    100px;
+    padding-bottom: 100px;
+  }
+
+}

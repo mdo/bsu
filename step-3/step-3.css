@@ -1,0 +1,193 @@
+/*
+ * STEP 3: ADDING JAVASCRIPT PLUGINS
+ *
+ * Now it's time to take our previous example and get build on it
+ * further by adding JavaScript interactions, courtesy of Bootstrap's
+ * plugins.
+ *
+ * Here's what we'll cover here:
+ *
+ *   1. Basic aesthetic changes to differentiate from Bootstrap
+ *   2. Customizing existing component: buttons
+ *   3. Extending existing component: button modifier class
+ *   4. Customizing existing component: navbar
+ *   5. Customizing existing component: jumbotron
+ *   6. Creating a new component: featurettes
+ */
+
+
+/*
+ * Build the basics of the document to get us going.
+ */
+
+body {
+  padding-top: 50px;
+  font-family: Ubuntu;
+}
+.footer {
+  padding: 60px 0;
+}
+
+
+/*
+ * Customize the default button styles
+ */
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn,
+.btn:hover,
+.btn:active {
+  background-color: #a03d3c;
+  border-color: #a03d3c;
+}
+.btn {
+  background-image: -webkit-linear-gradient(#b94a48, #a03d3c);
+  background-repeat: repeat-x;
+}
+.btn:hover {
+  background-position: 0 -15px;
+}
+
+
+/*
+ * Add our own button modifier class
+ */
+
+.btn-outline,
+.btn-outline:hover,
+.btn-outline:active {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(255,255,255,.4);
+}
+.btn-outline:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+
+/*
+ * Customize the navbar even more by affixing it
+ */
+
+.navbar {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.navbar.affix {
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+.navbar .btn {
+  float: right;
+  margin-top: 8px;
+}
+
+.navbar-brand {
+  color: #b94a48;
+}
+.navbar-brand:hover {
+  color: #a03d3c;
+}
+
+
+/*
+ * Instead of customizing the jumbotron, we customize the carousel
+ */
+
+.carousel-inner > .item {
+  height: 300px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 300px;
+}
+.carousel-caption {
+  max-width: 600px;
+  margin: 0 auto;
+  bottom: 20%;
+}
+.carousel-caption p {
+  display: none; /* Hide the caption for now, but show it when we have the space */
+}
+.carousel-caption a {
+  color: #fff;
+  font-weight: 500;
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-size: 14px;
+}
+.carousel-caption .btn-outline {
+  display: none; /* Hide to start, but show it when we have the space */
+}
+
+
+/*
+ * Create a brand new component
+ */
+
+.featurette {
+  padding: 20px;
+  text-align: center;
+}
+.featurette .container {
+  max-width: 800px;
+}
+.featurette:nth-child(even) {
+  background-color: #e8eaec;
+}
+.featurette .step-num {
+  width: 98px;
+  height: 98px;
+  margin: 0 auto;
+  line-height: 95px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 50px;
+}
+
+
+/*
+ * Responsively scale things up
+ */
+
+@media (min-width: 768px) {
+
+  /* Scale up images in carousel */
+  .carousel-inner > .item {
+    height: 600px;
+  }
+  .carousel-inner > .item > img {
+    min-height: 600px;
+  }
+
+  /* Scale font-sizes and show more content when doable */
+  .carousel-caption h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+  .carousel-caption p {
+    display: block;
+  }
+  .carousel-caption .btn-outline {
+    display: inline-block;
+  }
+
+  /* Increase whitespace around featurette for impact */
+  .featurette {
+    padding-top:    100px;
+    padding-bottom: 100px;
+  }
+
+}

@@ -1,0 +1,47 @@
+/*
+ * STEP 1: OVERVIEW OF BOOtSTRAP
+ *
+ * In this step, we take the basics of Bootstrap and the smallest amount
+ * of styling on top for *good enough* rendering to build on top of. In the
+ * following steps, we'll build on this base, swap components, add interactive
+ * components, and more.
+ */
+
+
+/*
+ * Build the basics of the document to get us going.
+ */
+
+body {
+  padding-bottom: 20px;
+}
+.footer {
+  margin-top: 20px;
+}
+
+/*
+ * Few tweaks to the navbar for proper spacing
+ */
+
+.navbar {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+.navbar .btn {
+  margin-top: 8px;
+}
+
+/*
+ * Tablets and up get special styles
+ */
+
+@media (min-width: 768px) {
+
+  body {
+    padding-top:    20px;
+  }
+  .navbar {
+    border-radius: 5px;
+  }
+
+}
