@@ -21,11 +21,26 @@
  */
 
 body {
-  padding-top: 50px;
   font-family: Ubuntu;
 }
 .footer {
-  padding: 60px 0;
+  padding: 60px 20px;
+  color: #999;
+  background-color: #282a2b;
+}
+.footer ul {
+  margin-bottom: 30px;
+}
+.footer li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer a {
+  color: #fff;
+}
+.footer p {
+  color: #7a7a7a;
+  text-align: center;
 }
 
 
