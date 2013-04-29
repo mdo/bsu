@@ -12,4 +12,4 @@ Bootstrap University is a hands-on code lab specially designed to familiarize yo
 
 ## License
 
-MIT.
+&copy; Mark Otto
