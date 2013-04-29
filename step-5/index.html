@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap University</title>
+
+    <!-- Enable proper responsive views and prevent iOS/WinPhone auto scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Add font from Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <!-- We'll be adding all our custom CSS here for each step. -->
+    <link href="./step-5.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Page content -->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">BSU</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../step-1/index.html">1. Overview</a></li>
+            <li><a href="../step-2/index.html">2. Customize</a></li>
+            <li><a href="../step-3/index.html">3. JavaScript</a></li>
+            <li><a href="../step-4/index.html">4. Using LESS</a></li>
+            <li class="active"><a href="../step-5/index.html">5. Productionize</a></li>
+          </ul>
+          <a href="#" class="btn btn-bsu">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bsu-masthead">
+      <div class="container">
+        <h1 class="page-heading">Bootstrap University</h2>
+        <p class="lead">Bootstrap University is a hands-on code lab specially designed to familiarize you with building on the Web with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by quickly taking you through building an example page with the latest beta version of Bootstrap 3.</p>
+        <a href="#" class="btn btn-bsu btn-large">Sign up today</a>
+        <a href="#" class="btn btn-outline btn-large">Learn more</a>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">1</h1>
+        <h2>Brief tour of Bootstrap 3</h2>
+        <p class="lead">Explore the features Bootstrap 3 has to offer, including a brief overview of the updated grid system and new components.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">2</h1>
+        <h2>Extending classes</h2>
+        <p class="lead">Building on top of Bootstrap is easy when you extend its powerful built-in classes to create your very own components.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">3</h1>
+        <h2>Customizing components</h2>
+        <p class="lead">Bootstrap 3 features new lightweight styles that are easy to override and build upon for just about every component.</p>
+      </div>
+    </div>
+
+    <div class="featurette">
+      <div class="container">
+        <h1 class="step-num">4</h1>
+        <h2>Using JavaScript plugins</h2>
+        <p class="lead">Add interactive components like tooltips, modals, and more to any page with a dozen JavaScript plugins built on jQuery.</p>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-2 col-offset-2">
+            <h4>University</h4>
+            <ul>
+              <li><a href="../step-1/index.html">Overview</a></li>
+              <li><a href="../step-2/index.html">Customize</a></li>
+              <li><a href="../step-3/index.html">JavaScript</a></li>
+              <li><a href="../step-4/index.html">Using LESS</a></li>
+              <li><a href="../step-5/index.html">Productionize</a></li>
+            </ul>
+          </div>
+          <div class="col col-lg-2">
+            <h4>Bootstrap</h4>
+            <ul>
+              <li><a href="http://getbootstrap.com">Documentation</a></li>
+              <li><a href="http://github.com/twitter/bootstrap">GitHub project</a></li>
+              <li><a href="http://expo.getbootstrap.com">Bootstrap Expo</a></li>
+            </ul>
+          </div>
+          <div class="col col-lg-2">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="http://github.com/twitter/bootstrap/issues">Report bugs</a></li>
+              <li><a href="http://groups.google.com/group/twitter-bootstrap">Google mailing list</a></li>
+            </ul>
+          </div>
+          <div class="col col-lg-2">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="http://blog.getbootstrap.com">Bootstrap Blog</a></li>
+              <li><a href="http://twitter.com/twbootstrap">Twitter</a></li>
+              <li><a href="http://github.com/mdo">@mdo</a></li>
+              <li><a href="http://github.com/fat">@fat</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>Made with love by <a href="http://markdotto.com">@mdo</a>.</p>
+        <p>&lt;3</p>
+      </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <!-- Placed at the end of the document so page content loads first. -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../bootstrap-compiled/bootstrap.js"></script>
+
+    <!-- Custom JavaScript -->
+    <!-- We'll be adding all our custom JS here for each demo. -->
+    <script>
+      $(function() {
+        $('.footer a').tooltip()
+      });
+    </script>
+
+  </body>
+</html>
