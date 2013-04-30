@@ -118,34 +118,8 @@ body {
  * Instead of customizing the jumbotron, we customize the carousel
  */
 
-.carousel-inner > .item {
-  height: 300px;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-height: 300px;
-}
-.carousel-caption {
-  max-width: 600px;
-  margin: 0 auto;
-  bottom: 20%;
-}
-.carousel-caption p {
-  display: none; /* Hide the caption for now, but show it when we have the space */
-}
-.carousel-caption a {
-  color: #fff;
-  font-weight: 500;
-}
-.carousel-caption .btn {
-  margin-top: 10px;
-  padding: 15px 25px;
-  font-size: 14px;
-}
-.carousel-caption .btn-outline {
-  display: none; /* Hide to start, but show it when we have the space */
+.carousel {
+
 }
 
 

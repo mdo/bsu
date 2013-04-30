@@ -44,43 +44,20 @@ body {
 
 
 /*
- * Customize the default button styles
+ * Customize the default button styles to use #b94a48, #a03d3c
  */
 
 .btn {
-  text-transform: uppercase;
-}
 
-.btn,
-.btn:hover,
-.btn:active {
-  background-color: #a03d3c;
-  border-color: #a03d3c;
-}
-.btn {
-  background-image: -webkit-linear-gradient(#b94a48, #a03d3c);
-  background-repeat: repeat-x;
-}
-.btn:hover {
-  background-position: 0 -15px;
 }
 
 
 /*
- * Add our own button modifier class
+ * Add our own button modifier class to have no background, white text/border/bg
  */
 
-.btn-outline,
-.btn-outline:hover,
-.btn-outline:active {
-  color: #fff;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid rgba(255,255,255,.4);
-}
-.btn-outline:hover,
-.btn-outline:active {
-  background-color: rgba(255,255,255,.4);
+.btn-outline {
+
 }
 
 
@@ -149,23 +126,7 @@ body {
  */
 
 .featurette {
-  padding: 20px;
-  text-align: center;
-}
-.featurette .container {
-  max-width: 800px;
-}
-.featurette:nth-child(even) {
-  background-color: #e8eaec;
-}
-.featurette .step-num {
-  width: 98px;
-  height: 98px;
-  margin: 0 auto;
-  line-height: 95px;
-  text-align: center;
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 50px;
+
 }
 
 
