@@ -1,6 +1,6 @@
 # Bootstrap University
 
-Bootstrap University is a hands-on code lab specially designed to familiarize you with building on th Web with [Bootstrap](http://getbootstrap.com) by quickly taking you through building an example page with the latest beta version of Bootstrap 3.
+Bootstrap University is a hands-on code lab specially designed to familiarize you with building on the Web with [Bootstrap](http://getbootstrap.com) by quickly taking you through building an example page with the latest beta version of Bootstrap 3.
 
 ## Author
 
